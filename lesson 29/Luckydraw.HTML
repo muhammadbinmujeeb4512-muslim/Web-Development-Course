@@ -51,7 +51,7 @@
             }, 1000);
             function checkForm() {
                 var name = document.getElementById("name").value;
-                var guess = document.getElemenetById("guess").value;
+                var guess = document.getElementById("guess").value;
                 var ok = true;
 
                 if (name == "") {
@@ -74,7 +74,7 @@
                 if (ok == true) {
                     var lucky = Math.floor(Math.random() * 5) + 1;
                     if (guess == lucky) {
-                        document.getElementById("result").textContent = "You win, " + name + "! The luckynumber was " + lucky + "!";
+                        document.getElementById("result").textContent = "You win, " + name + "! The lucky number was " + lucky + "!";
                         document.getElementById("result").style.color = "green";
                     } else {
                         document.getElementById("result").textContent = "So close," + name + "!The lucky number was" + lucky + ". Try again!";
